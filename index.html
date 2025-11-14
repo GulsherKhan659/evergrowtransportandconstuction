@@ -4,67 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ever Grow Transport & General Contracting LLC | Comprehensive Industrial & Logistics Solutions</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Custom Configuration for Tailwind Colors -->
+    <link rel="stylesheet" href="assets/css/styles.css">
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'primary': '#173444', // Dark Blue/Slate
-                        'accent': '#ef8744',  // Orange/Tangerine
-                        'secondary': '#9ea5aa', // Gray/Silver
-                        'dark-text': '#222',
-                        'light-bg': '#fefefe',
-                    }
-                }
-            }
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'primary': '#173444',
+          'accent': '#ef8744',
+          'secondary': '#9ea5aa',
+          'dark-text': '#222',
+          'light-bg': '#fefefe',
         }
-    </script>
-    <!-- Professional Google Fonts: Poppins (Headers) and Inter (Body) -->
+      }
+    }
+  }
+</script>
+
+<script type="application/ld+json">
+    {
+  "@context": "http://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness", "GeneralContractor"],
+      "@id": "https://www.etcllcae.com/#organization",
+      "name": "Ever Grow Transport & General Contracting LLC",
+      "url": "https://www.etcllcae.com/",
+      "logo": "https://www.etcllcae.com/assets/images/logo.png",
+      "description": "Licensed contractor for comprehensive industrial Demolition, Oil & Gas Services, Heavy Transport, and professional Furniture Moving across Dubai, Abu Dhabi, and the UAE.",
+      "telephone": "+971555012785",
+      "email": "info@evergrowllc.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Mussafah M39",
+        "addressLocality": "Abu Dhabi",
+        "addressRegion": "Abu Dhabi",
+        "addressCountry": "AE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "24.3639", 
+        "longitude": "54.5165" 
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "Dubai"
+        },
+        {
+          "@type": "State",
+          "name": "Abu Dhabi"
+        },
+        {
+          "@type": "Country",
+          "name": "UAE"
+        }
+      ],
+      "sameAs": [
+        "#" , /* Add Facebook URL */
+        "#" , /* Add LinkedIn URL */
+        "#"   /* Add Instagram URL */
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://www.etcllcae.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.etcllcae.com/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+
+
+
+
+{
+  "@context": "http://schema.org",
+  "@type": "Service",
+  "serviceType": "Professional Moving Service",
+  "name": "Professional Furniture Movers and Packers in Dubai & UAE",
+  "description": "Secure, professional residential and commercial furniture moving services, packing, storage, and long-distance relocation across Dubai, Abu Dhabi, and the wider UAE.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Ever Grow Transport & General Contracting LLC"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Dubai"
+    },
+    {
+      "@type": "State",
+      "name": "Abu Dhabi"
+    }
+  ],
+  "image": "https://www.etcllcae.com/assets/images/furniture.jpg",
+  "url": "https://www.etcllcae.com/#movers",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AED",
+    "areaServed": {
+      "@type": "City",
+      "name": "Dubai"
+    }
+  }
+}
+
+{
+  "@context": "http://schema.org",
+  "@type": "Service",
+  "serviceType": "Licensed Demolition Contractor Service",
+  "name": "Industrial & Residential Demolition Contractor Dubai",
+  "description": "Comprehensive, safety-compliant demolition solutions for residential, commercial, and heavy industrial structures in Dubai, including site clearing and debris management.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Ever Grow Transport & General Contracting LLC"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Dubai"
+    },
+    {
+      "@type": "State",
+      "name": "Abu Dhabi"
+    }
+  ],
+  "image": "https://www.etcllcae.com/assets/images/services/01.png", /* Use a relevant demolition image */
+  "url": "https://www.etcllcae.com/#demolition-detail",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "AED",
+    "areaServed": {
+      "@type": "City",
+      "name": "Dubai"
+    }
+  }
+}
+</script>
+    <meta name="description" content="Ever Grow Transport & General Contracting LLC provides comprehensive Demolition, Heavy Transport, Oil & Gas Field Services, and professional Moving Solutions across Abu Dhabi and the UAE. Get a free quote today.">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
-    <style>
-        /* Updated font families */
-        body {
-            font-family: 'Inter', sans-serif;
-            color: theme('colors.dark-text');
-            /* Smooth scrolling for all anchor links */
-            scroll-behavior: smooth; 
-        }
-        h1, h2, h3, h4 {
-            font-family: 'Poppins', sans-serif;
-        }
-        .section-heading::after {
-            content: '';
-            display: block;
-            width: 70px;
-            height: 4px;
-            background-color: theme('colors.accent');
-            margin: 10px auto 0;
-        }
-        /* Custom styles for carousel for better control */
-        .carousel-slide {
-            flex: 0 0 100%; /* Important: each slide takes 100% of the carousel width */
-            position: relative;
-            background-size: cover;
-            background-position: center;
-        }
-        /* Style for the demolition/movers card icon container - NOW USES ACCENT COLOR */
-        .service-icon-box {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 60px;
-            height: 60px;
-            border-radius: 12px;
-            /* UPDATED: Using a light tint of the accent color (rgba(239, 135, 68, 0.15)) */
-            background-color: rgba(239, 135, 68, 0.15); 
-            color: theme('colors.accent'); /* Using the primary accent color */
-        }
-    </style>
+   
 </head>
 <body class="bg-light-bg antialiased">
 
@@ -212,14 +304,19 @@
 
                 <!-- Service Card 2: Site Preparation -->
                 <div class="group relative rounded-xl overflow-hidden shadow-lg transform hover:shadow-2xl hover:scale-[1.02] transition duration-500">
-                    <img src="assets/images/services/02.png" alt="Site Preparation" class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                    <div class="absolute bottom-0 left-0 p-6">
-                        <h3 class="text-2xl font-bold text-white mb-2">Site Preparation</h3>
-                        <p class="text-secondary text-sm mb-4">Comprehensive earthwork, grading, and foundation services to start your project right.</p>
-                        <a href="#contact" class="text-accent font-semibold hover:text-white transition duration-300">Plan Your Site <i class="fas fa-arrow-right ml-1 text-xs"></i></a>
-                    </div>
-                </div>
+    <img src="assets/images/furniture.jpg" alt="Furniture Moving Service" class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+    <div class="absolute bottom-0 left-0 p-6">
+        <h3 class="text-2xl font-bold text-white mb-2">Furniture Moving Service</h3>
+        <p class="text-secondary text-sm mb-4">
+            Professional furniture moving and shifting services across Dubai with safe handling and reliable transport.
+        </p>
+        <a href="#contact" class="text-accent font-semibold hover:text-white transition duration-300">
+            Book Moving Service <i class="fas fa-arrow-right ml-1 text-xs"></i>
+        </a>
+    </div>
+</div>
+
 
                 <!-- Service Card 3: Waste Management & Recycling -->
                 <div class="group relative rounded-xl overflow-hidden shadow-lg transform hover:shadow-2xl hover:scale-[1.02] transition duration-500">
@@ -756,33 +853,7 @@
     </footer>
     <!-- /Professional Footer -->
 
-    <script>
-        const carousel = document.getElementById('carousel');
-        const slides = document.querySelectorAll('.carousel-slide');
-        const totalSlides = slides.length;
-        let currentIndex = 0;
-        let autoSlideInterval;
-
-        // 1. Update Carousel View
-        const updateCarousel = () => {
-            const offset = -currentIndex * 100;
-            carousel.style.transform = `translateX(${offset}%)`;
-        };
-
-        // 2. Navigation Logic
-        const nextSlide = () => {
-            currentIndex = (currentIndex + 1) % totalSlides;
-            updateCarousel();
-        };
-
-        // 3. Auto Slide
-        const startAutoSlide = () => {
-            autoSlideInterval = setInterval(nextSlide, 5000); // Slide every 5 seconds
-        };
-
-        // 4. Initialization
-        // Start the automatic rotation of the slides
-        startAutoSlide();
+    <script src="assets/js/man.js">
     </script>
 
 </body>

@@ -1,0 +1,9 @@
+# robots.txt for Ever Grow Transport & General Contracting LLC (etcllcae.com)
+
+User-agent: *
+Disallow: /assets/css/
+Disallow: /assets/js/
+# Add any other non-essential folders here
+
+# Set the correct sitemap location
+Sitemap: https://www.etcllcae.com/sitemap.xml

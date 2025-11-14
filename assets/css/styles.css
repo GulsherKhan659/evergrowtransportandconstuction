@@ -1,0 +1,33 @@
+  body {
+            font-family: 'Inter', sans-serif;
+            color: theme('colors.dark-text');
+            scroll-behavior: smooth; 
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .section-heading::after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 4px;
+            background-color: theme('colors.accent');
+            margin: 10px auto 0;
+        }
+        .carousel-slide {
+            flex: 0 0 100%; /* Important: each slide takes 100% of the carousel width */
+            position: relative;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-icon-box {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            background-color: rgba(239, 135, 68, 0.15); 
+            color: theme('colors.accent'); /* Using the primary accent color */
+        }
