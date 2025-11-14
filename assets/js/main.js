@@ -1,5 +1,4 @@
-
-        const carousel = document.getElementById('carousel');
+  const carousel = document.getElementById('carousel');
         const slides = document.querySelectorAll('.carousel-slide');
         const totalSlides = slides.length;
         let currentIndex = 0;
@@ -22,5 +21,6 @@
             autoSlideInterval = setInterval(nextSlide, 5000); // Slide every 5 seconds
         };
 
-
+        // 4. Initialization
+        // Start the automatic rotation of the slides
         startAutoSlide();

@@ -22,6 +22,21 @@
     }
   }
 </script>
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon/favicon-32x32.png">
+<link rel="shortcut icon" href="assets/images/favicon/favicon.ico">
+
+<!-- Android -->
+<link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicon/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/images/favicon/android-chrome-512x512.png">
+
+<!-- Apple Touch Icon -->
+<link rel="apple-touch-icon" href="assets/images/favicon/apple-touch-icon.png">
+
+<!-- Web Manifest -->
+<link rel="manifest" href="assets/images/favicon/site.webmanifest">
+
 
 <script type="application/ld+json">
     {
@@ -304,7 +319,7 @@
 
                 <!-- Service Card 2: Site Preparation -->
                 <div class="group relative rounded-xl overflow-hidden shadow-lg transform hover:shadow-2xl hover:scale-[1.02] transition duration-500">
-    <img src="assets/images/furniture.jpg" alt="Furniture Moving Service" class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
+    <img src="assets/images/services/furniture.jpg" alt="Furniture Moving Service" class="w-full h-80 object-cover transform group-hover:scale-110 transition duration-500">
     <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
     <div class="absolute bottom-0 left-0 p-6">
         <h3 class="text-2xl font-bold text-white mb-2">Furniture Moving Service</h3>
@@ -852,9 +867,33 @@
         </div>
     </footer>
     <!-- /Professional Footer -->
+<script>
+      const carousel = document.getElementById('carousel');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+        let currentIndex = 0;
+        let autoSlideInterval;
 
-    <script src="assets/js/man.js">
-    </script>
+        // 1. Update Carousel View
+        const updateCarousel = () => {
+            const offset = -currentIndex * 100;
+            carousel.style.transform = `translateX(${offset}%)`;
+        };
 
+        // 2. Navigation Logic
+        const nextSlide = () => {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateCarousel();
+        };
+
+        // 3. Auto Slide
+        const startAutoSlide = () => {
+            autoSlideInterval = setInterval(nextSlide, 5000); // Slide every 5 seconds
+        };
+
+        // 4. Initialization
+        // Start the automatic rotation of the slides
+        startAutoSlide();
+</script>
 </body>
 </html>
